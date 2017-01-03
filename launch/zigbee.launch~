@@ -1,0 +1,12 @@
+<launch>
+	<node pkg="zigbee" type="zigbee" name="zigbee" output="screen">
+		<!-- node parameters -->
+		<param name="zigbee_serial_name" type="string" value="/dev/ttyUSB0"/>
+		<param name="zigbee_baud_rate" type="int" value="115200"/>
+		<param name="zigbee_own_ID" type="int" value="2"/>
+
+		<param name="zigbee_target_ID_num" type="int" value="0"/>
+
+		<param name="zigbee_target_ID0" type="int" value="2"/>
+	</node>
+</launch>
